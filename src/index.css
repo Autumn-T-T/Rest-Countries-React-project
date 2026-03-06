@@ -1,0 +1,129 @@
+/* GENERAL */
+
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  background: #e8f3e6;
+  color: #2f3e2f;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  background: #cfe8c9;
+  border-bottom: 2px solid #a9caa4;
+}
+
+/* CONTROLS (SEARCH + FILTER) */
+
+.controls {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* INPUTS */
+
+input,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a8caa2;
+  background: #f5fbf3;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* BUTTON */
+
+button {
+  background: #a7cfa2;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #95be91;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* COUNTRY CARD */
+
+.card {
+  background: #f6fbf4;
+  border-radius: 10px;
+  padding: 15px;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* DARK MODE */
+
+.dark {
+  background: #1f3321;
+  color: #e6f4e6;
+  min-height: 100vh;
+}
+
+/* DARK HEADER */
+
+.dark .header {
+  background: #2e4a31;
+  border-bottom: 2px solid #3c5f3f;
+}
+
+/* DARK INPUTS */
+
+.dark input,
+.dark select {
+  background: #2a422c;
+  color: white;
+  border: 1px solid #3f6143;
+}
+
+/* DARK BUTTON */
+
+.dark button {
+  background: #3c5f3f;
+  color: white;
+}
+
+.dark button:hover {
+  background: #4c774f;
+}
+
+/* DARK CARDS */
+
+.dark .card {
+  background: #2a422c;
+  color: #e6f4e6;
+}
